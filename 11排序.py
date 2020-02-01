@@ -15,6 +15,22 @@ def bubbleSort(list):
 
 # 插入排序
 def insertionSort(list):
+    i = 1
+    count = len(list)
+    while i < count:
+        val = list[i]
+        j = i - 1
+        while j >= 0:
+            if list[j] > val:
+                list[j + 1] = list[j]
+            else:
+                break
+            j -= 1
+        i += 1
+        list[j + 1] = val
+
+# (自己的)插入排序
+def insertionSort2(list):
     count = len(list)
     # id1 = id(list)
     for i in range(count):
