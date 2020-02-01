@@ -1,8 +1,9 @@
 '''
-数据结构与算法之美代码实现：顺序队列的实现
+数据结构与算法之美代码实现：队列的实现
 '''
 
 
+# 顺序队列
 class List():
     def __init__(self, canAdd=False):
         self.basicList = [None, None, None, None, None]
@@ -52,3 +53,5 @@ class List():
         self.head += 1
         self.count -= 1
         return tmp
+
+# 环形队列
